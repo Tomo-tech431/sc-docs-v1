@@ -5,37 +5,37 @@ image::interface-layout-con.webp[Interface Layout Image for Connectors]
 [width="100%",cols="1,3,3,1",options="header",]
 |===
 |Part Number |Interface Name |Form Factor |Remarks
-|CON1 |OBC インタフェース |基板間コネクタ 400ピン (Terminal type / 1.27mm ピッチ) |挿抜寿命：1,000回
-|CON2 |BPD 電源供給用インタフェース |ピンヘッダ 2ピン (2.54mm ピッチ) |
-|CON3 |CON18 信号線観測用インタフェース |ピンヘッダ 5ピン (2.54mm ピッチ) |Connector not installed
-|CON4 |IGLOO2 FPGA JTAG インタフェース |シュラウド型ピンヘッダ 10ピン (5ピン x 2列 / 2.54mm ピッチ) |
-|CON5 |IGLOO2 デバックインタフェース |ピンヘッダ 4ピン (2.54mm ピッチ) |
-|CON6 |Versal / IGLOO2 デバックインタフェース |USB Type.C コネクタ |
-|CON7 |Versal Reserve インタフェース |ピンヘッダ 4ピン (2.54mm ピッチ) |Connector not installed
-|CON8 |microSD カードインタフェース |microSD コネクタ |
-|CON9 |USB2.0 インタフェース |USB Type.A コネクタ |
-|CON10 |Gigabit Ethernet インタフェース |Gigabit Ethernet コネクタ |
-|CON11 |FMC モジュール接続用インタフェース |基板間コネクタ 400ピン (Socket type / 1.27mm ピッチ) |
-|CON12 |Versal MIO 拡張インタフェース |ピンヘッダ 20ピン (10ピン x 2列 / 2.54mm ピッチ) |
-|CON13 |CON19 信号線観測用インタフェース |ピンヘッダ 3ピン (2.54mm ピッチ) |Connector not installed
-|CON14 |Versal HDIO 拡張インタフェース |ピンヘッダ 48ピン (24ピン x 2列 / 2.54mm ピッチ) |
-|CON15 |IGLOO2 MSIO (Bank 5) 拡張インタフェース |ピンヘッダ 48ピン (24ピン x 2列 / 2.54mm ピッチ) |
-|CON16 |Dev Board 主電源供給インタフェース |DCジャック |対応プラグ : 2.1mmΦ (センタープラス)
-|CON17 |USER LED 制御インタフェース |ピンヘッダ 4ピン (2.54mm ピッチ) |
-|CON18 |IGLOO2 RS422/485 インタフェース |端子台 5ピン (5.0mm ピッチ) |
-|CON19 |CAN インタフェース |端子台3ピン (5.0mm ピッチ) |
-|CON20 |Dev Board 主電源供給インタフェース |端子台2ピン (5.0mm ピッチ) |
+|CON1 |OBC Interface |Board-to-board connector 400 pins (Terminal type / 1.27mm pitch) |Mating cycles: 1,000 times
+|CON2 |BPD Power Supply Interface |Pin header 2 pins (2.54mm pitch) |
+|CON3 |CON18 Signal Observation Interface |Pin header 5 pins (2.54mm pitch) |Connector not installed
+|CON4 |IGLOO2 FPGA JTAG Interface |Shrouded pin header 10 pins (5 pins x 2 rows / 2.54mm pitch) |
+|CON5 |IGLOO2 Debug Interface |Pin header 4 pins (2.54mm pitch) |
+|CON6 |Versal / IGLOO2 Debug Interface |USB Type.C Connector |
+|CON7 |Versal Reserve Interface |Pin header 4 pins (2.54mm pitch) |Connector not installed
+|CON8 |microSD Card Interface |microSD Connector |
+|CON9 |USB2.0 Interface |USB Type.A Connector |
+|CON10 |Gigabit Ethernet Interface |Gigabit Ethernet Connector |
+|CON11 |Interface for FMC Module Connection |Board-to-board connector 400 pins (Socket type / 1.27mm pitch) |
+|CON12 |Versal MIO Expansion Interface |Pin header 20 pins (10 pins x 2 rows / 2.54mm pitch) |
+|CON13 |CON19 Signal Observation Interface |Pin header 3 pins (2.54mm pitch) |Connector not installed
+|CON14 |Versal HDIO Expansion Interface |Pin header 48 pins (24 pins x 2 rows / 2.54mm pitch) |
+|CON15 |IGLOO2 MSIO (Bank 5) Expansion Interface |Pin header 48 pins (24 pins x 2 rows / 2.54mm pitch) |
+|CON16 |Dev Board Main Power Supply Interface |DC Jack |Supported plug: 2.1mmΦ (Center positive)
+|CON17 |USER LED Control Interface |Pin header 4 pins (2.54mm pitch) |
+|CON18 |IGLOO2 RS422/485 Interface |Terminal block 5 pins (5.0mm pitch) |
+|CON19 |CAN Interface |Terminal block 3 pins (5.0mm pitch) |
+|CON20 |Dev Board Main Power Supply Interface |Terminal block 2 pins (5.0mm pitch) |
 |===
 
-== OBC インタフェース (CON1)
-CON1 は OBC との接続インタフェースです。 +
+== OBC Interface (CON1)
+CON1 is the connection interface with the OBC. +
 
-搭載コネクタ：SEAM-40-02.0-S-10-1-A-K-TR (Samtec)
+Installed connector: SEAM-40-02.0-S-10-1-A-K-TR (Samtec)
 
-== BPD 電源供給用インタフェース (CON2)
-CON2 は Versal の Battery Power Domain (BPD) に対し、電源を供給することが可能なインタフェースです。 +
-BPD は Real Time Clock (RTC) と Battery Backup RAM (BBRAM) を包括しています。 +
-RTC と BBRAM は、通常は OBC 内で生成される電圧 (VCCAUX_PMC_SMON) により動作していますが、OBC の主電源が切断された場合、CON2 から供給される電圧で維持、または保持されます。
+== BPD Power Supply Interface (CON2)
+CON2 is an interface capable of supplying power to the Versal's Battery Power Domain (BPD). +
+The BPD encompasses the Real Time Clock (RTC) and Battery Backup RAM (BBRAM). +
+The RTC and BBRAM typically operate on the voltage (VCCAUX_PMC_SMON) generated within the OBC, but if the main power of the OBC is disconnected, they are maintained or retained by the voltage supplied from CON2.
 
 [width="100%",cols="1,1,1,1,2",options="header",]
 |===
@@ -44,10 +44,10 @@ RTC と BBRAM は、通常は OBC 内で生成される電圧 (VCCAUX_PMC_SMON) 
 |2 |GND |Power |VCC_BATT_IN |Ground
 |===
 
-== CON18 信号線観測用インタフェース (CON3)
-CON3 は CON18 に接続したデバイスとの通信信号をプローブで観測するためのインタフェースです。 +
-CON3 のピンアサインは、下表のように CON18 と同じピンアサインとなっています。 +
-信号線の詳細は CON18 の仕様を参照してください。
+== CON18 Signal Observation Interface (CON3)
+CON3 is an interface for observing communication signals with the device connected to CON18 using a probe. +
+The pin assignment of CON3 is identical to that of CON18, as shown in the table below. +
+For details on the signal lines, refer to the CON18 specifications.
 
 [width="50%",cols="1,1,1",options="header",]
 |===
@@ -61,11 +61,11 @@ Pin Number
 |5 |GND |5
 |===
 
-== IGLOO2 FPGA JTAG インタフェース (CON4)
-CON4 は IGLOO2 の FPGA JTAG インタフェースです。 +
-ピン配列は Microchip 社製の FPGA デバッカである FrashPro5 に対応しています。
+== IGLOO2 FPGA JTAG Interface (CON4)
+CON4 is the FPGA JTAG interface for the IGLOO2. +
+The pinout is compatible with Microchip's FPGA debugger, FlashPro5.
 
-- 奇数ピン列
+- Odd pin row
 
 [width="100%",cols="1,1,1,1,2",options="header",]
 |===
@@ -73,25 +73,25 @@ CON4 は IGLOO2 の FPGA JTAG インタフェースです。 +
 |1 |M2GL_JTAG_TCK |Input |VDD_1V8_M2GL_B4 |IGLOO2 JTAG Clock
 |3 |M2GL_JTAG_TDO |Output |VDD_1V8_M2GL_B4 |IGLOO2 JTAG Data Output
 |5 |M2GL_JTAG_TMS |Input |VDD_1V8_M2GL_B4 |IGLOO2 JTAG Selection
-|7 |NC |- |VDD_1V8_M2GL_B4 |TP20に接続
+|7 |NC |- |VDD_1V8_M2GL_B4 |Connect to TP20
 |9 |M2GL_JTAG_TDI |Input |VDD_1V8_M2GL_B4 |IGLOO2 JTAG Data Output
 |===
 
-- 偶数ピン列
+- Even pin row
 
 [width="100%",cols="1,1,1,1,2",options="header",]
 |===
 |Pin Number |Pin Name |I/O |Power Domain |Description
 |2 |GND |Power |VDD_1V8_M2GL_B4 |Ground
-|4 |NC |- |VDD_1V8_M2GL_B4 |TP21に接続
+|4 |NC |- |VDD_1V8_M2GL_B4 |Connect to TP21
 |6 |VDD_1V8_M2GL_B4 |Power |VDD_1V8_M2GL_B4 |Power supply (VDD_1V8_M2GL_B4)
-|8 |M2GL_JTAG_TRSTB |Input |VDD_1V8_M2GL_B4 |IGLOO2 JTAG リセット
+|8 |M2GL_JTAG_TRSTB |Input |VDD_1V8_M2GL_B4 |IGLOO2 JTAG Reset
 |10 |GND |Power |VDD_1V8_M2GL_B4 |Ground
 |===
 
-== IGLOO2 デバックインタフェース (CON5)
-CON5 の Pin 2, 3 が IGLOO2 の UART に割り当てられており、Console として使用が可能です。 +
-Pin 1, 4 は IGLOO2 の Reserve ピンです。
+== IGLOO2 Debug Interface (CON5)
+Pins 2 and 3 of CON5 are assigned to the IGLOO2 UART and can be used as a console. +
+Pins 1 and 4 are IGLOO2 reserved pins.
 
 [width="100%",cols="1,1,1,1,2",options="header",]
 |===
@@ -102,25 +102,25 @@ Pin 1, 4 は IGLOO2 の Reserve ピンです。
 |4 |M2GL_RSVD3 |In/Out |VDD_1V8_M2GL_B4 |Reserve
 |===
 
-== Versal / IGLOO2 デバックインタフェース (CON6)
-CON6 は Versal 及び IGLOO2 のデバックインタフェースです。 +
-FTDI IC が搭載されており、以下のデバック方法の選択が可能です。
+== Versal / IGLOO2 Debug Interface (CON6)
+CON6 is the debug interface for Versal and IGLOO2. +
+It is equipped with an FTDI IC, allowing the selection of the following debug methods:
 
 - Versal FPGA JTAG
 - Versal APU/RPU Console
 - IGLOO2 Safety Processor Telemetry/Telecommand
 
-また CON6 には、双方向高速マルチプレクサを経由して、Versal の 高速シリアル通信信号である GTYP が接続されており、Versal SmartLynq+ HSDP でのデバックも可能です。
+Additionally, the Versal high-speed serial communication signal GTYP is connected to CON6 via a bidirectional high-speed multiplexer, enabling debugging with the Versal SmartLynq+ HSDP.
 
 === Versal FPGA JTAG
-Versal の FPGA JTAG インタフェースです。 +
-JP13~JP18 に挿入されているジャンパーソケットを『FTDI』シルク側へ切り替えると、FTDI IC の Channel. A に接続され、利用が可能となります。
+This is the Versal FPGA JTAG interface. +
+When the jumper sockets inserted in JP13-JP18 are switched to the "FTDI" silkscreen side, it connects to Channel A of the FTDI IC and becomes available for use.
 
 === Versal APU/RPU Console
-Versal の APU/RPU のコンソールです。 +
-JP19~JP24 に挿入されているジャンパーソケットを切り替えることにより、FTDI IC へ  Versal の UART にマッピングされたシリアル通信信号が接続され、利用が可能となります。 +
-FTDI IC の Channel. B には Versal の UART0、Channel. C には UART1 が接続されます。 +
-またシリアル通信信号には Versal LPD MIO と Versal HDIO の 2種類があり、各々が独立しているため、一方のシリアル通信信号がテストで使用されることになっても、もう一方をコンソールとして利用することが可能です。
+This is the console for the Versal APU/RPU. +
+By switching the jumper sockets inserted in JP19-JP24, the serial communication signals mapped to the Versal UART are connected to the FTDI IC and become available for use. +
+Versal UART0 is connected to Channel B of the FTDI IC, and UART1 is connected to Channel C. +
+There are two types of serial communication signals: Versal LPD MIO and Versal HDIO. Since they are independent, even if one serial communication signal is used in a test, the other can be used as a console.
 
 [width="100%",cols="1,1,1,1",options="header",]
 |===
@@ -130,83 +130,81 @@ FTDI IC の Channel. B には Versal の UART0、Channel. C には UART1 が接�
 |===
 
 === IGLOO2 Safety Processor Telemetry/Telecommand
-IGLOO2 の UART を利用し、OBC からの Telemetry 信号によるモニタ、または OBC への Telecommand 信号によるモード変更が可能です。 +
-JP25~JP29 に挿入されているジャンパーソケットを『FTDI』シルク側へ切り替えると、FTDI IC の Channel. D に接続され、利用が可能となります。
+Using the IGLOO2 UART, it is possible to monitor via Telemetry signals from the OBC or change modes via Telecommand signals to the OBC. +
+When the jumper sockets inserted in JP25-JP29 are switched to the "FTDI" silkscreen side, it connects to Channel D of the FTDI IC and becomes available for use.
 
 === Versal SmartLynq+ HSDP
-Versal の HSDP (High-Speed Debug Port) を使用し、AMD社製 SmartLynq+ モジュールを介して高速デバックおよびトレースが可能です。 +
-JP34 へジャンパーソケットを挿入することで利用が可能となります。
+Using the Versal HSDP (High-Speed Debug Port), high-speed debugging and tracing are possible via the AMD SmartLynq+ module. +
+It becomes available for use by inserting a jumper socket into JP34.
 
-== Versal Reserve インタフェース (CON7)
-CON7 には Versal PMC MIO 1 が接続されています。 +
-CON7 に繋がる MIO は、SD カードインタフェースとの間にレベルシフタを設ける場合、その通信方向を制御する目的で使用されます。 +
-Dev Board では、双方向通信が可能なレベルシフタを採用しており、本機能は不要となるため Reserve としています。
+== Versal Reserve Interface (CON7)
+Versal PMC MIO 1 is connected to CON7. +
+The MIO connected to CON7 is used to control the communication direction when a level shifter is provided between it and the microSD card interface. +
+Since the Dev Board uses a level shifter capable of bidirectional communication, this function is unnecessary, hence it is designated as Reserve.
 
 [width="100%",cols="1,2,1,1,2",options="header",]
 |===
 |Pin Number |Pin Name |I/O |Power Domain |Description
-|1 |PMC_MIO46_SD0_DIRC |Output |VDD_1V8_PMC |Versal (PMC_501_MIO46) へ接続
-|2 |PMC_MIO47_SD0_DIR0 |Output |VDD_1V8_PMC |Versal (PMC_501_MIO47) へ接続
-|3 |PMC_MIO48_SD0_DIR1 |Output |VDD_1V8_PMC |Versal (PMC_501_MIO48) へ接続
+|1 |PMC_MIO46_SD0_DIRC |Output |VDD_1V8_PMC |Connected to Versal(PMC_501_MIO46)
+|2 |PMC_MIO47_SD0_DIR0 |Output |VDD_1V8_PMC |Connected to Versal(PMC_501_MIO47)
+|3 |PMC_MIO48_SD0_DIR1 |Output |VDD_1V8_PMC |Connected to Versal(PMC_501_MIO48)
 |4 |NC |- |- |-
 |===
 
-== microSD カードインタフェース (CON8)
-CON8 は microSD カードを挿入できるインタフェースです。 +
-開発の初期では、起動するためのソフトウェアを OBC 上の Flash メモリや eMMC ではなく、microSD カードに書き込んで使用することを想定しています。
+== microSD Card Interface (CON8)
+CON8 is an interface where a microSD card can be inserted. +
+In the early stages of development, it is assumed that the software for booting will be written to and used from a microSD card instead of the Flash memory or eMMC on the OBC.
 
-== USB2.0 インタフェース (CON9)
-CON9 は OBC を USB2.0 のホストとして利用可能なインタフェースです。 +
-CON9 から供給される電源である VBUS には、Dev Board の主電源から生成され、Load Switch を経由した +5V が使用されます。 +
-VBUS は USB2.0 に準拠しています。
+== USB2.0 Interface (CON9)
+CON9 is an interface that allows the OBC to be used as a USB 2.0 host. +
+The VBUS, which is the power supplied from CON9, uses +5V generated from the main power of the Dev Board and routed through a load switch. +
+VBUS complies with USB 2.0.
 
-== Gigabit Ethernet インタフェース (CON10)
-CON10 は RJ45 型ジャックの Gigabit Ethernet インタフェースです。 +
-Versal の APU へ Linux OS をポーティングすることで、OBC へのリモートログインが可能となります。 +
-接続のリンクが確立した場合、CON10 に搭載されている緑色の LED が点灯します。 +
-また通信中は、同じく CON10 に搭載されている黄色の LED が点滅します。 +
-CON10 を使用する場合、Versal LPD MIO の電源ドメインが 1.8V 以上となるように JP38~JP41 を選択してください。
+== Gigabit Ethernet Interface (CON10)
+CON10 is a Gigabit Ethernet interface with an RJ45 type jack. +
+By porting the Linux OS to the Versal APU, remote login to the OBC becomes possible. +
+When the connection link is established, the green LED mounted on CON10 lights up. +
+During communication, the yellow LED also mounted on CON10 blinks. +
+When using CON10, select JP38-JP41 so that the power domain of the Versal LPD MIO is 1.8V or higher.
 
-== FMC モジュール接続用インタフェース (CON11)
-CON11 は、Versal PL または IGLOO2 の高速シリアル通信信号を評価する目的で、市販の FMC モジュールを接続することが可能なインタフェースです。 +
-接続を想定している FMC モジュールを以下に示します。
+== Interface for FMC Module Connection (CON11)
+CON11 is an interface capable of connecting a commercially available FMC module for the purpose of evaluating the high-speed serial communication signals of Versal PL or IGLOO2. +
+The expected FMC modules for connection are as follows:
 
-- iWave 社製 PCIe Gen3 x8 FMC モジュール (iW-FMC-PCIe-I2)
-- opsero 社製 M.2 M-key Stack FMC (OP073)
-- opsero 社製 RPi Camera FMC (OP068)
-- AMD 社製 FMC XM105 Debug Card (HW-FMC-XM105-G)
+- PCIe Gen3 x8 FMC Module by iWave (iW-FMC-PCIe-I2)
+- M.2 M-key Stack FMC by opsero (OP073)
+- RPi Camera FMC by opsero (OP068)
+- FMC XM105 Debug Card by AMD (HW-FMC-XM105-G)
 
-搭載コネクタ：ASP-134486-01 (Samtec)
+Installed connector: ASP-134486-01 (Samtec)
 
-== Versal MIO 拡張インタフェース (CON12)
+== Versal MIO Expansion Interface (CON12)
+CON12 is an interface for bringing out the unused Versal MIO signals to the outside. +
+However, some LPD MIOs can be connected to circuits on the FTDI, CAN, or CON11 (Interface for FMC Module Connection) by jumper settings.
 
-CON12 は、Versal の未使用 MIO 信号を外部に引き出すためのインタフェースです。
-接続されているのは LPD MIO 0 から 11 と、IC27 を介した PMC MIO 12 および PMC MIO 37 です。
-ただし、一部の LPD MIO はジャンパ設定により FTDI、CAN、FMCモジュール接続用インタフェース(CON11) 側の回路にも接続できます。
-
-CON12 の Pin 1~8 に接続されている Versal LPD MIO は、ジャンパーソケットにより CON12 以外の回路へ接続が可能となるため注意が必要です。 +
-CON12 に接続されている電源 (VDD_B502) は Versal LPD MIO の電源ドメインにもなり、その電圧は JP38~JP41 で選択が可能です。 +
-また VDD_B502 には Load Switch が設けられており、Versal の主電源が切断された場合、確実に Versal Bank 502 への電源も切断します。 +
-CON12 の Pin 13~14 に接続されている Versal PMC MIO 0 と Versal PMC MIO 1 は、電源ドメインが 1.8V で固定されていることから、レベルシフタ (IC27) を介して VDD_B502 へ電源ドメインを変換し Versal LPD MIO と揃えています。 +
-そのため、Pin 13~14 の通信方向に従って JP47~JP48 を切り替える必要があることに注意してください。
+Please note that the Versal LPD MIO connected to Pins 1-8 of CON12 can be connected to circuits other than CON12 using jumper sockets. +
+The power supply (VDD_B502) connected to CON12 also serves as the power domain for the Versal LPD MIO, and its voltage can be selected with JP38-JP41. +
+In addition, a load switch is provided for VDD_B502, so that if the main power of Versal is disconnected, it will reliably disconnect the power to Versal Bank 502 as well. +
+Versal PMC MIO 0 and Versal PMC MIO 1, connected to Pins 13-14 of CON12, have a fixed power domain of 1.8V, so the power domain is converted to VDD_B502 via a level shifter (IC27) to match the Versal LPD MIO. +
+Therefore, please note that you must switch JP47-JP48 according to the communication direction of Pins 13-14.
 
 [width="100%",cols="1,2,1,1,2",options="header",]
 |===
 |Pin Number |Pin Name |I/O |Power Domain |Description
-|1 |LPD_MIO0_UART0_RXD |Input |VDD_B502 |CON1(J25) または JP20 (FTDI IC Channel.B) へ接続
-|2 |LPD_MIO1_UART0_TXD |Output |VDD_B502 |CON1(K25) または JP21 (FTDI IC Channel.B) へ接続
-|3 |LPD_MIO2_CAN0_RX |Input |VDD_B502 |CON1(J26) または JP44 (CAN Transceiver) へ接続
-|4 |LPD_MIO3_CAN0_TX |Output |VDD_B502 |CON1(K26) または JP43 (CAN Transceiver) へ接続
-|5 |LPD_MIO4_UART1_TXD |Output |VDD_B502 |CON1(J27) または JP24 (FTDI IC Channel.C) へ接続
-|6 |LPD_MIO5_UART1_RXD |Input |VDD_B502 |CON1(K27) または JP23 (FTDI IC Channel.C) へ接続
-|7 |LPD_MIO6_I2C0_SCL |Output |VDD_B502 |CON1(J28) または JP36 (CON11に繋がるレベルシフタ) へ接続
-|8 |LPD_MIO7_I2C0_SDA |In/Out |VDD_B502 |CON1(K28) または JP37 (CON11に繋がるレベルシフタ) へ接続
-|9 |LPD_MIO8 |In/Out |VDD_B502 |CON1(J29) へ接続
-|10 |LPD_MIO9 |In/Out |VDD_B502 |CON1(K29) へ接続
-|11 |LPD_MIO10 |In/Out |VDD_B502 |CON1(J30) へ接続
-|12 |LPD_MIO11 |In/Out |VDD_B502 |CON1(K30) へ接続
-|13 |PMC_MIO12_3V3 |In/Out |VDD_B502 |IC27 を経由して CON1(J33) へ接続
-|14 |PMC_MIO37_3V3 |In/Out |VDD_B502 |IC27 を経由して CON1(H33) へ接続
+|1 |LPD_MIO0_UART0_RXD |Input |VDD_B502 |Connected to CON1(J25) or JP20 (FTDI IC Channel.B)
+|2 |LPD_MIO1_UART0_TXD |Output |VDD_B502 |Connected to CON1(K25) or JP21 (FTDI IC Channel.B)
+|3 |LPD_MIO2_CAN0_RX |Input |VDD_B502 |Connected to CON1(J26) or JP44 (CAN Transceiver)
+|4 |LPD_MIO3_CAN0_TX |Output |VDD_B502 |Connected to CON1(K26) or JP43 (CAN Transceiver)
+|5 |LPD_MIO4_UART1_TXD |Output |VDD_B502 |Connected to CON1(J27) or JP24 (FTDI IC Channel.C)
+|6 |LPD_MIO5_UART1_RXD |Input |VDD_B502 |Connected to CON1(K27) or JP23 (FTDI IC Channel.C)
+|7 |LPD_MIO6_I2C0_SCL |Output |VDD_B502 |Connected to CON1(J28) or JP36 (Level shifter to CON11)
+|8 |LPD_MIO7_I2C0_SDA |In/Out |VDD_B502 |Connected to CON1(K28) or JP37 (Level shifter to CON11)
+|9 |LPD_MIO8 |In/Out |VDD_B502 |Connected to CON1(J29)
+|10 |LPD_MIO9 |In/Out |VDD_B502 |Connected to CON1(K29)
+|11 |LPD_MIO10 |In/Out |VDD_B502 |Connected to CON1(J30)
+|12 |LPD_MIO11 |In/Out |VDD_B502 |Connected to CON1(K30)
+|13 |PMC_MIO12_3V3 |In/Out |VDD_B502 |Connected to CON1(J33) via IC27
+|14 |PMC_MIO37_3V3 |In/Out |VDD_B502 |Connected to CON1(H33) via IC27
 |15 |GND |Power |VDD_B502 |Ground
 |16 |GND |Power |VDD_B502 |Ground
 |17 |VDD_B502 |Power |VDD_B502 |Power supply (VDD_B502)
@@ -215,10 +213,10 @@ CON12 の Pin 13~14 に接続されている Versal PMC MIO 0 と Versal PMC MIO
 |20 |VDD_B502 |Power |VDD_B502 |Power supply (VDD_B502)
 |===
 
-== CON19 信号線観測用インタフェース (CON13)
-CON13 は、CON19 に接続したデバイスとの通信信号をプローブで観測するためのインタフェースです。 +
-CON13 のピンアサインは、下表のように CON19 と同じピンアサインとなっています。 +
-信号線の詳細は CON19 の仕様を参照してください。
+== CON19 Signal Observation Interface (CON13)
+CON13 is an interface for observing communication signals with the device connected to CON19 using a probe. +
+The pin assignment of CON13 is identical to that of CON19, as shown in the table below. +
+For details on the signal lines, refer to the CON19 specifications.
 
 [width="50%",cols="1,1,1",options="header",]
 |===
@@ -230,22 +228,22 @@ Pin Number
 |3 |GND |3
 |===
 
-== Versal HDIO 拡張インタフェース (CON14)
-CON14 は Versal HDIO が接続されたインタフェースです。 +
-NC ピンを挟んで 12ピンずつの 3 Block に分かれており、それぞれの Block の列が PMOD のピン配列に対応しています。 +
-CON14 へ複数の PMOD を挿入した場合、PMOD 同士が互いに干渉しないよう NC ピンが挟まれています。 +
-CON14 に接続されている電源 (VDD_B302) は Versal HDIO の電源ドメインにもなり、その電圧は JP49~JP52 で選択が可能です。 +
-VDD_B302 には Load Switch が設けられており、Versal の主電源が切断された場合、確実に Versal Bank 302 への電源も切断します。
+== Versal HDIO Expansion Interface (CON14)
+CON14 is the interface where the Versal HDIO is connected. +
+It is divided into 3 blocks of 12 pins each, separated by NC pins, and the row of each block corresponds to the PMOD pinout. +
+When multiple PMODs are inserted into CON14, NC pins are placed in between so that the PMODs do not interfere with each other. +
+The power supply (VDD_B302) connected to CON14 also serves as the power domain for the Versal HDIO, and its voltage can be selected with JP49-JP52. +
+A load switch is provided for VDD_B302, so that if the main power of Versal is disconnected, it will reliably disconnect the power to Versal Bank 302 as well.
 
 - Block 1
 
 [width="100%",cols="1,2,1,1,2",options="header",]
 |===
 |Pin Number |Pin Name |I/O |Power Domain |Description
-|1 |HDIO_302_L0P |In/Out |VDD_B302 |CON1(A22) へ接続
-|3 |HDIO_302_L0N |In/Out |VDD_B302 |CON1(B22) へ接続
-|5 |HDIO_302_L2P |In/Out |VDD_B302 |CON1(A26) へ接続
-|7 |HDIO_302_L2N |In/Out |VDD_B302 |CON1(B26) へ接続
+|1 |HDIO_302_L0P |In/Out |VDD_B302 |Connected to CON1(A22)
+|3 |HDIO_302_L0N |In/Out |VDD_B302 |Connected to CON1(B22)
+|5 |HDIO_302_L2P |In/Out |VDD_B302 |Connected to CON1(A26)
+|7 |HDIO_302_L2N |In/Out |VDD_B302 |Connected to CON1(B26)
 |9 |GND |Power |VDD_B302 |Ground
 |11 |VDD_B302 |Power |VDD_B302 |Power supply (VDD_B302)
 |===
@@ -253,10 +251,10 @@ VDD_B302 には Load Switch が設けられており、Versal の主電源が切
 [width="100%",cols="1,2,1,1,2",options="header",]
 |===
 |Pin Number |Pin Name |I/O |Power Domain |Description
-|2 |HDIO_302_L1P |In/Out |VDD_B302 |CON1(A24) へ接続
-|4 |HDIO_302_L1N |In/Out |VDD_B302 |CON1(B24) へ接続
-|6 |HDIO_302_L3P |In/Out |VDD_B302 |CON1(B23) へ接続
-|8 |HDIO_302_L3N |In/Out |VDD_B302 |CON1(C23) へ接続
+|2 |HDIO_302_L1P |In/Out |VDD_B302 |Connected to CON1(A24)
+|4 |HDIO_302_L1N |In/Out |VDD_B302 |Connected to CON1(B22)
+|6 |HDIO_302_L3P |In/Out |VDD_B302 |Connected to CON1(B23)
+|8 |HDIO_302_L3N |In/Out |VDD_B302 |Connected to CON1(C23)
 |10 |GND |Power |VDD_B302 |Ground
 |12 |VDD_B302 |Power |VDD_B302 |Power supply (VDD_B302)
 |===
@@ -266,10 +264,10 @@ VDD_B302 には Load Switch が設けられており、Versal の主電源が切
 [width="100%",cols="1,2,1,1,2",options="header",]
 |===
 |Pin Number |Pin Name |I/O |Power Domain |Description
-|19 |HDIO_302_L4P |In/Out |VDD_B302 |CON1(B25) へ接続
-|21 |HDIO_302_L4N |In/Out |VDD_B302 |CON1(C25) へ接続
-|23 |HDIO_302_L6P_HDGC |In/Out |VDD_B302 |CON1(D24) へ接続
-|25 |HDIO_302_L6N_HDGC |In/Out |VDD_B302 |CON1(E24) へ接続
+|19 |HDIO_302_L4P |In/Out |VDD_B302 |Connected to CON1(B25)
+|21 |HDIO_302_L4N |In/Out |VDD_B302 |Connected to CON1(C25)
+|23 |HDIO_302_L6P_HDGC |In/Out |VDD_B302 |Connected to CON1(D24)
+|25 |HDIO_302_L6N_HDGC |In/Out |VDD_B302 |Connected to CON1(E24)
 |27 |GND |Power |VDD_B302 |Ground
 |29 |VDD_B302 |Power |VDD_B302 |Power supply (VDD_B302)
 |===
@@ -277,10 +275,10 @@ VDD_B302 には Load Switch が設けられており、Versal の主電源が切
 [width="100%",cols="1,2,1,1,2",options="header",]
 |===
 |Pin Number |Pin Name |I/O |Power Domain |Description
-|20 |HDIO_302_L5P_HDGC |In/Out |VDD_B302 |CON1(D22) へ接続
-|22 |HDIO_302_L5N_HDGC |In/Out |VDD_B302 |CON1(E22) へ接続
-|24 |HDIO_302_L7P |In/Out |VDD_B302 |CON1(D26) へ接続
-|26 |HDIO_302_L7N |In/Out |VDD_B302 |CON1(E26) へ接続
+|20 |HDIO_302_L5P_HDGC |In/Out |VDD_B302 |Connected to CON1(D22)
+|22 |HDIO_302_L5N_HDGC |In/Out |VDD_B302 |Connected to CON1(E22)
+|24 |HDIO_302_L7P |In/Out |VDD_B302 |Connected to CON1(D26)
+|26 |HDIO_302_L7N |In/Out |VDD_B302 |Connected to CON1(E26)
 |28 |GND |Power |VDD_B302 |Ground
 |30 |VDD_B302 |Power |VDD_B302 |Power supply (VDD_B302)
 |===
@@ -290,10 +288,10 @@ VDD_B302 には Load Switch が設けられており、Versal の主電源が切
 [width="100%",cols="1,2,1,1,2",options="header",]
 |===
 |Pin Number |Pin Name |I/O |Power Domain |Description
-|37 |HDIO_302_L8P_UART0_RXD |Input |VDD_B302 |CON1(E21) へ接続
-|39 |HDIO_302_L8N_UART0_TXD |Output |VDD_B302 |CON1(F21) へ接続
-|41 |HDIO_302_L10P_UART1_RXD |Input |VDD_B302 |CON1(E25) へ接続
-|43 |HDIO_302_L10N_UART1_TXD |Output |VDD_B302 |CON1(F25) へ接続
+|37 |HDIO_302_L8P_UART0_RXD |Input |VDD_B302 |Connected to CON1(E21)
+|39 |HDIO_302_L8N_UART0_TXD |Output |VDD_B302 |Connected to CON1(F21)
+|41 |HDIO_302_L10P_UART1_RXD |Input |VDD_B302 |Connected to CON1(E25)
+|43 |HDIO_302_L10N_UART1_TXD |Output |VDD_B302 |Connected to CON1(F25)
 |45 |GND |Power |VDD_B302 |Ground
 |47 |VDD_B302 |Power |VDD_B302 |Power supply (VDD_B302)
 |===
@@ -301,31 +299,31 @@ VDD_B302 には Load Switch が設けられており、Versal の主電源が切
 [width="100%",cols="1,2,1,1,2",options="header",]
 |===
 |Pin Number |Pin Name |I/O |Power Domain |Description
-|38 |HDIO_302_L9P |In/Out |VDD_B302 |CON1(E23) へ接続
-|40 |HDIO_302_L9N |In/Out |VDD_B302 |CON1(F23) へ接続
+|38 |HDIO_302_L9P |In/Out |VDD_B302 |Connected to CON1(E23)
+|40 |HDIO_302_L9N |In/Out |VDD_B302 |Connected to CON1(F23)
 |42 |NC |- |- |-
 |44 |NC |- |- |-
 |46 |GND |Power |VDD_B302 |Ground
 |48 |VDD_B302 |Power |VDD_B302 |Power supply (VDD_B302)
 |===
-NOTE: 表に含まれていないピンは全て NC
+NOTE: All pins not included in the table are NC.
 
-== IGLOO2 MSIO (Bank 5) 拡張インタフェース (CON15)
-CON15 は IGLOO2 MSIO (Bank 5) が接続されたインタフェースです。 +
-CON14 と同様に 12ピンずつの 3 Block に分かれており、それぞれの Block の列が PMOD のピン配列に対応しています。 +
-CON14 と同様、複数の PMOD を挿入した場合、PMOD 同士が互いに干渉しないよう Block を離していますが、 MSIO の本数が多いことから、CON14 では NC ピンであった Block の間にも MSIO を接続しています。 +
-CON15 に接続されている電源 (VDD_M2GL_B5) は IGLOO2 MSIO (Bank 5) の電源ドメインにもなり、その電圧は JP53~JP56 で選択が可能です。 +
-ただし、IGLOO2 の主電源は Dev Board の主電源に連動していることから、VDD_B502 や VDD_B302 とは異なり、VDD_M2GL_B5 には Load Switch を設けていません。
+== IGLOO2 MSIO (Bank 5) Expansion Interface (CON15)
+CON15 is the interface where the IGLOO2 MSIO (Bank 5) is connected. +
+Like CON14, it is divided into 3 blocks of 12 pins each, and the row of each block corresponds to the PMOD pinout. +
+Similar to CON14, when multiple PMODs are inserted, the blocks are separated to prevent PMODs from interfering with each other. However, due to the large number of MSIOs, MSIOs are also connected between the blocks, which were NC pins in CON14. +
+CThe power supply (VDD_M2GL_B5) connected to CON15 also serves as the power domain for the IGLOO2 MSIO (Bank 5), and its voltage can be selected with JP53-JP56. +
+However, since the main power of IGLOO2 is linked to the main power of the Dev Board, unlike VDD_B502 and VDD_B302, no load switch is provided for VDD_M2GL_B5.
 
 - Block 1
 
 [width="100%",cols="1,2,1,1,2",options="header",]
 |===
 |Pin Number |Pin Name |I/O |Power Domain |Description
-|1 |M2GL_MSIO196PB5 |In/Out |VDD_M2GL_B5 |CON1(J5) へ接続
-|3 |M2GL_MSIO196NB5 |In/Out |VDD_M2GL_B5 |CON1(K5) へ接続
-|5 |M2GL_MSIO198PB5 |In/Out |VDD_M2GL_B5 |CON1(J7) へ接続
-|7 |M2GL_MSIO198NB5 |In/Out |VDD_M2GL_B5 |CON1(K7) へ接続
+|1 |M2GL_MSIO196PB5 |In/Out |VDD_M2GL_B5 |Connected to CON1(J5)
+|3 |M2GL_MSIO196NB5 |In/Out |VDD_M2GL_B5 |Connected to CON1(K5)
+|5 |M2GL_MSIO198PB5 |In/Out |VDD_M2GL_B5 |Connected to CON1(J7)
+|7 |M2GL_MSIO198NB5 |In/Out |VDD_M2GL_B5 |Connected to CON1(K7)
 |9 |GND |Power |VDD_M2GL_B5 |Ground
 |11 |VDD_M2GL_B5 |Power |VDD_M2GL_B5 |Power supply (VDD_M2GL_B5)
 |===
@@ -333,10 +331,10 @@ CON15 に接続されている電源 (VDD_M2GL_B5) は IGLOO2 MSIO (Bank 5) の�
 [width="100%",cols="1,2,1,1,2",options="header",]
 |===
 |Pin Number |Pin Name |I/O |Power Domain |Description
-|2 |M2GL_MSIO197PB5 |In/Out |VDD_M2GL_B5 |CON1(J6) へ接続
-|4 |M2GL_MSIO197NB5 |In/Out |VDD_M2GL_B5 |CON1(K6) へ接続
-|6 |M2GL_MSIO201PB5 |In/Out |VDD_M2GL_B5 |CON1(J8) へ接続
-|8 |M2GL_MSIO201NB5 |In/Out |VDD_M2GL_B5 |CON1(K8) へ接続
+|2 |M2GL_MSIO197PB5 |In/Out |VDD_M2GL_B5 |Connected to CON1(J6)
+|4 |M2GL_MSIO197NB5 |In/Out |VDD_M2GL_B5 |Connected to CON1(K6)
+|6 |M2GL_MSIO201PB5 |In/Out |VDD_M2GL_B5 |Connected to CON1(J8)
+|8 |M2GL_MSIO201NB5 |In/Out |VDD_M2GL_B5 |Connected to CON1(K8)
 |10 |GND |Power |VDD_M2GL_B5 |Ground
 |12 |VDD_M2GL_B5 |Power |VDD_M2GL_B5 |Power supply (VDD_M2GL_B5)
 |===
@@ -346,16 +344,16 @@ CON15 に接続されている電源 (VDD_M2GL_B5) は IGLOO2 MSIO (Bank 5) の�
 [width="100%",cols="1,2,1,1,2",options="header",]
 |===
 |Pin Number |Pin Name |I/O |Power Domain |Description
-|13 |M2GL_MSIO203PB5 |In/Out |VDD_M2GL_B5 |CON1(J9) へ接続
-|15 |M2GL_MSIO203NB5 |In/Out |VDD_M2GL_B5 |CON1(K9) へ接続
+|13 |M2GL_MSIO203PB5 |In/Out |VDD_M2GL_B5 |Connected to CON1(J9)
+|15 |M2GL_MSIO203NB5 |In/Out |VDD_M2GL_B5 |Connected to CON1(K9)
 |17 |GND |Power |VDD_M2GL_B5 |Ground
 |===
 
 [width="100%",cols="1,2,1,1,2",options="header",]
 |===
 |Pin Number |Pin Name |I/O |Power Domain |Description
-|14 |M2GL_MSIO204PB5 |In/Out |VDD_M2GL_B5 |CON1(J10) へ接続
-|16 |M2GL_MSIO204NB5 |In/Out |VDD_M2GL_B5 |CON1(K10) へ接続
+|14 |M2GL_MSIO204PB5 |In/Out |VDD_M2GL_B5 |Connected to CON1(J10)
+|16 |M2GL_MSIO204NB5 |In/Out |VDD_M2GL_B5 |Connected to CON1(K10)
 |18 |GND |Power |VDD_M2GL_B5 |Ground
 |===
 
@@ -364,10 +362,10 @@ CON15 に接続されている電源 (VDD_M2GL_B5) は IGLOO2 MSIO (Bank 5) の�
 [width="100%",cols="1,2,1,1,2",options="header",]
 |===
 |Pin Number |Pin Name |I/O |Power Domain |Description
-|19 |M2GL_MSIO208PB5 |In/Out |VDD_M2GL_B5 |CON1(G5) へ接続
-|21 |M2GL_MSIO208NB5 |In/Out |VDD_M2GL_B5 |CON1(H5) へ接続
-|23 |M2GL_MSIO212PB5 |In/Out |VDD_M2GL_B5 |CON1(G7) へ接続
-|25 |M2GL_MSIO212NB5 |In/Out |VDD_M2GL_B5 |CON1(H7) へ接続
+|19 |M2GL_MSIO208PB5 |In/Out |VDD_M2GL_B5 |Connected to CON1(G5)
+|21 |M2GL_MSIO208NB5 |In/Out |VDD_M2GL_B5 |Connected to CON1(H5)
+|23 |M2GL_MSIO212PB5 |In/Out |VDD_M2GL_B5 |Connected to CON1(G7)
+|25 |M2GL_MSIO212NB5 |In/Out |VDD_M2GL_B5 |Connected to CON1(H7)
 |27 |GND |Power |VDD_M2GL_B5 |Ground
 |29 |VDD_M2GL_B5 |Power |VDD_M2GL_B5 |Power supply (VDD_M2GL_B5)
 |===
@@ -375,10 +373,10 @@ CON15 に接続されている電源 (VDD_M2GL_B5) は IGLOO2 MSIO (Bank 5) の�
 [width="100%",cols="1,2,1,1,2",options="header",]
 |===
 |Pin Number |Pin Name |I/O |Power Domain |Description
-|20 |M2GL_MSIO209PB5 |In/Out |VDD_M2GL_B5 |CON1(G6) へ接続
-|22 |M2GL_MSIO209NB5 |In/Out |VDD_M2GL_B5 |CON1(H6) へ接続
-|24 |M2GL_MSIO213PB5 |In/Out |VDD_M2GL_B5 |CON1(G8) へ接続
-|26 |M2GL_MSIO213NB5 |In/Out |VDD_M2GL_B5 |CON1(H8) へ接続
+|20 |M2GL_MSIO209PB5 |In/Out |VDD_M2GL_B5 |Connected to CON1(G6)
+|22 |M2GL_MSIO209NB5 |In/Out |VDD_M2GL_B5 |Connected to CON1(H6)
+|24 |M2GL_MSIO213PB5 |In/Out |VDD_M2GL_B5 |Connected to CON1(G8)
+|26 |M2GL_MSIO213NB5 |In/Out |VDD_M2GL_B5 |Connected to CON1(H8)
 |28 |GND |Power |VDD_M2GL_B5 |Ground
 |30 |VDD_M2GL_B5 |Power |VDD_M2GL_B5 |Power supply (VDD_M2GL_B5)
 |===
@@ -388,16 +386,16 @@ CON15 に接続されている電源 (VDD_M2GL_B5) は IGLOO2 MSIO (Bank 5) の�
 [width="100%",cols="1,2,1,1,2",options="header",]
 |===
 |Pin Number |Pin Name |I/O |Power Domain |Description
-|31 |M2GL_MSIO216PB5 |In/Out |VDD_M2GL_B5 |CON1(G9) へ接続
-|33 |M2GL_MSIO216NB5 |In/Out |VDD_M2GL_B5 |CON1(H9) へ接続
+|31 |M2GL_MSIO216PB5 |In/Out |VDD_M2GL_B5 |Connected to CON1(G9)
+|33 |M2GL_MSIO216NB5 |In/Out |VDD_M2GL_B5 |Connected to CON1(H9)
 |35 |GND |Power |VDD_M2GL_B5 |Ground
 |===
 
 [width="100%",cols="1,2,1,1,2",options="header",]
 |===
 |Pin Number |Pin Name |I/O |Power Domain |Description
-|32 |M2GL_MSIO221PB5 |In/Out |VDD_M2GL_B5 |CON1(G10) へ接続
-|34 |M2GL_MSIO221NB5 |In/Out |VDD_M2GL_B5 |CON1(H10) へ接続
+|32 |M2GL_MSIO221PB5 |In/Out |VDD_M2GL_B5 |Connected to CON1(G10)
+|34 |M2GL_MSIO221NB5 |In/Out |VDD_M2GL_B5 |Connected to CON1(H10)
 |36 |GND |Power |VDD_M2GL_B5 |Ground
 |===
 
@@ -406,10 +404,10 @@ CON15 に接続されている電源 (VDD_M2GL_B5) は IGLOO2 MSIO (Bank 5) の�
 [width="100%",cols="1,2,1,1,2",options="header",]
 |===
 |Pin Number |Pin Name |I/O |Power Domain |Description
-|37 |M2GL_MSIO222PB5 |In/Out |VDD_M2GL_B5 |CON1(E5) へ接続
-|39 |M2GL_MSIO222NB5 |In/Out |VDD_M2GL_B5 |CON1(F5) へ接続
-|41 |M2GL_MSIO228PB5 |In/Out |VDD_M2GL_B5 |CON1(E7) へ接続
-|43 |M2GL_MSIO228NB5 |In/Out |VDD_M2GL_B5 |CON1(F8) へ接続
+|37 |M2GL_MSIO222PB5 |In/Out |VDD_M2GL_B5 |Connected to CON1(E5)
+|39 |M2GL_MSIO222NB5 |In/Out |VDD_M2GL_B5 |Connected to CON1(F5)
+|41 |M2GL_MSIO228PB5 |In/Out |VDD_M2GL_B5 |Connected to CON1(E7)
+|43 |M2GL_MSIO228NB5 |In/Out |VDD_M2GL_B5 |Connected to CON1(F8)
 |45 |GND |Power |VDD_M2GL_B5 |Ground
 |47 |VDD_M2GL_B5 |Power |VDD_M2GL_B5 |Power supply (VDD_M2GL_B5)
 |===
@@ -417,58 +415,58 @@ CON15 に接続されている電源 (VDD_M2GL_B5) は IGLOO2 MSIO (Bank 5) の�
 [width="100%",cols="1,2,1,1,2",options="header",]
 |===
 |Pin Number |Pin Name |I/O |Power Domain |Description
-|38 |M2GL_MSIO226PB5 |In/Out |VDD_M2GL_B5 |CON1(F6) へ接続
-|40 |M2GL_MSIO226NB5 |In/Out |VDD_M2GL_B5 |CON1(F7) へ接続
-|42 |M2GL_MSIO230PB5 |In/Out |VDD_M2GL_B5 |CON1(E9) へ接続
-|44 |M2GL_MSIO230NB5 |In/Out |VDD_M2GL_B5 |CON1(F9) へ接続
+|38 |M2GL_MSIO226PB5 |In/Out |VDD_M2GL_B5 |Connected to CON1(F6)
+|40 |M2GL_MSIO226NB5 |In/Out |VDD_M2GL_B5 |Connected to CON1(F7)
+|42 |M2GL_MSIO230PB5 |In/Out |VDD_M2GL_B5 |Connected to CON1(E9)
+|44 |M2GL_MSIO230NB5 |In/Out |VDD_M2GL_B5 |Connected to CON1(F9)
 |46 |GND |Power |VDD_M2GL_B5 |Ground
 |48 |VDD_M2GL_B5 |Power |VDD_M2GL_B5 |Power supply (VDD_M2GL_B5)
 |===
 
-== Dev Board 主電源供給インタフェース (CON16)
-CON16 は Dev Board へ主電源を供給するためのインタフェースです。 +
-DC ジャックを採用しており、対応する AC アダプターのプラグ仕様は、外径 5.5mm、内径 2.1mm のセンタープラスです。 +
-CON16 を使用する場合、CON20 へ電圧を印加しないでください。
+== Dev Board Main Power Supply Interface (CON16)
+CON16 is the interface for supplying main power to the Dev Board. +
+It uses a DC jack, and the plug specifications of the compatible AC adapter are an outer diameter of 5.5mm, an inner diameter of 2.1mm, center positive. +
+When using CON16, do not apply voltage to CON20.
 
-搭載コネクタ：PJ-002AH (Same Sky)
+Installed connector: PJ-002AH (Same Sky)
 
-== USER LED 制御インタフェース (CON17)
-CON17 はユーザーが任意で使用が可能な LED (USER LED) を制御できるインタフェースです。 +
-1つのピンに対して1つの LED が制御可能です。 +
-ピンに対し High レベルの信号を入力すると LED が点灯し、Low レベルを入力すると消灯します。 +
-各ピンに対して 6V 以上の電圧を印加しないよう注意してください。
+== USER LED Control Interface (CON17)
+CON17 is an interface that can control the LEDs (USER LED) that users can optionally use. +
+One LED can be controlled for each pin. +
+When a High-level signal is input to a pin, the LED lights up, and when a Low-level signal is input, it turns off. +
+Be careful not to apply a voltage of 6V or higher to each pin.
 
 [width="80%",cols="1,1,1,1",options="header",]
 |===
 |Pin Number |Pin Name |I/O |Description
-|1 |ULED1 |Input |LED6 の制御が可能
-|2 |ULED2 |Input |LED7 の制御が可能
-|3 |ULED3 |Input |LED8 の制御が可能
-|4 |ULED4 |Input |LED9 の制御が可能
+|1 |ULED1 |Input |Can control LED6
+|2 |ULED2 |Input |Can control LED7
+|3 |ULED3 |Input |Can control LED8
+|4 |ULED4 |Input |Can control LED9
 |===
 
-== IGLOO2 RS422/485 インタフェース (CON18)
-CON18 は、IGLOO2 の UART と RS-422/RS-485 規格で通信が可能なインタフェースです。 +
-JP25~JP29 に挿入されているジャンパーソケットを『RS422』シルク側へ切り替え、CON18 へ RS-422/RS-485 の規格に対応したデバイスを接続することで通信が可能となります。 +
-JP30~JP33 により、半二重または全二重の通信方式への切り替えや、終端抵抗の切り替えが可能となります。 +
-また CON3 で通信信号の観測が可能です。
+== IGLOO2 RS422/485 Interface (CON18)
+CON18 is an interface capable of communicating with the IGLOO2 UART using the RS-422/RS-485 standard. +
+Communication becomes possible by switching the jumper sockets inserted in JP25-JP29 to the "RS422" silkscreen side and connecting a device compatible with the RS-422/RS-485 standard to CON18. +
+JP30-JP33 enable switching to half-duplex or full-duplex communication methods, as well as switching the termination resistor. +
+Also, communication signals can be observed at CON3.
 
 [width="100%",cols="1,1,1,1,4",options="header",]
 |===
 |Pin Number |Pin Name |I/O |Power Domain |Description
-|1 |RS422_TXP |Output |VDD_3V3_C |IGLOO2 の UART_TX が差動変換されたプラス側の信号
-|2 |RS422_TXM |Output |VDD_3V3_C |IGLOO2 の UART_TX が差動変換されたマイナス側の信号
-|3 |RS422_RXP |Input |VDD_3V3_C |IGLOO2 の UART_RX が差動変換されたプラス側の信号
-|4 |RS422_RXM |Input |VDD_3V3_C |IGLOO2 の UART_RX が差動変換されたマイナス側の信号
+|1 |RS422_TXP |Output |VDD_3V3_C |Positive side signal of differentially converted IGLOO2 UART_TX
+|2 |RS422_TXM |Output |VDD_3V3_C |Negative side signal of differentially converted IGLOO2 UART_TX
+|3 |RS422_RXP |Input |VDD_3V3_C |Positive side signal of differentially converted IGLOO2 UART_RX
+|4 |RS422_RXM |Input |VDD_3V3_C |Negative side signal of differentially converted IGLOO2 UART_RX
 |5 |GND |Power |VDD_3V3_C |Ground
 |===
 
-== CAN インタフェース (CON19)
-CON19 は CAN 通信のインタフェースです。 +
-CAN0 にマッピング可能な Versal LPD MIO が、CAN Transceiver により差動信号へ変換され CON19 へ接続されています。 +
-JP42~JP44 へジャンパーソケットを挿入することで利用が可能ですが、ここで使用している MIO は CON12 にも分岐しているため注意が必要です。 +
-また、JP45~JP46 へジャンパーソケットを挿入することで、CAN 通信の終端が可能です。 +
-CON19 を使用する場合、Versal LPD MIO の電源ドメインが 1.8V 以上となるように JP38~JP41 を選択してください。
+== CAN Interface (CON19)
+CON19 is the interface for CAN communication. +
+The Versal LPD MIO that can be mapped to CAN0 is converted to a differential signal by a CAN Transceiver and connected to CON19. +
+It can be used by inserting a jumper socket into JP42-JP44, but please note that the MIO used here also branches to CON12. +
+CAN communication can be terminated by inserting a jumper socket into JP45-JP46. +
+When using CON19, select JP38-JP41 so that the power domain of the Versal LPD MIO is 1.8V or higher.
 
 [width="100%",cols="1,1,1,1,1",options="header",]
 |===
@@ -478,10 +476,10 @@ CON19 を使用する場合、Versal LPD MIO の電源ドメインが 1.8V 以�
 |3 |GND |Power |- |Ground
 |===
 
-== Dev Board 主電源供給インタフェース (CON20)
-CON20 は、CON16 と同じく Dev Board の主電源を供給するためのインタフェースです。 +
-5mm ピッチの 2ピンの端子台を採用しています。 +
-CON20 を使用する場合、CON16 へ電圧を印加しないでください。
+== Dev Board Main Power Supply Interface (CON20)
+CON20, like CON16, is an interface for supplying main power to the Dev Board. +
+It uses a 2-pin terminal block with a 5.0mm pitch. +
+When using CON20, do not apply voltage to CON16.
 
 [width="100%",cols="1,1,1,1,1",options="header",]
 |===
