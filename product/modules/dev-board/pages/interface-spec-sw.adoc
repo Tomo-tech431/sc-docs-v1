@@ -5,14 +5,14 @@ image::interface-layout-sw.webp[Interface Layout Image for Switches]
 [width="100%",cols="1,3,3,1",options="header",]
 |===
 |Part Number |Interface Name |Form Factor |Remarks
-|SW1 |Versal 起動モード制御スイッチ |DIPスイッチ (4ポジション) |
-|SW2 |Versal POR 制御スイッチ |タクトスイッチ |工場出荷用途
-|SW3 |IGLOO2 POR 制御スイッチ |タクトスイッチ |工場出荷用途
-|SW4 |Dev Board 主電源切り替えスイッチ |スライドスイッチ (SPDT) |
+|SW1 |Versal Boot Mode Control Switch |DIP switch (4-position) |
+|SW2 |Versal POR Control Switch |Tactile switch |Factory use only
+|SW3 |IGLOO2 POR Control Switch |Tactile switch |Factory use only
+|SW4 |Dev Board Main Power Switch |Slide switch (SPDT) |
 |===
 
-== Versal 起動モード制御スイッチ (SW1)
-SW1 は Versal の起動モードを制御するための DIP スイッチです。
+== Versal Boot Mode Control Switch (SW1)
+SW1 is a DIP switch for controlling the Versal boot mode.
 
 [width="100%",cols="1,1,1,1,1",options="header",]
 |===
@@ -23,7 +23,7 @@ SW1 は Versal の起動モードを制御するための DIP スイッチです
 |MODE 3 |4, 5 |XCVE_MODE3 |Input |Power supply (VDD_5V0_CM)
 |===
 
-スイッチの設定により、以下のように起動モードを設定することが可能です。
+Depending on the switch configuration, it is possible to set the boot mode as follows.
 
 image::SW1.webp[Detail Image of SW1]
 
@@ -55,19 +55,30 @@ image::SW1.webp[Detail Image of SW1]
 | OFF
 |===
 
+[CAUTION]
+====
+All combinations other than the above are prohibited and cannot be used.
+====
 
-上記以外のすべての組み合わせは、禁止されており、使用できません。
+== Versal POR Control Switch (SW2)
+SW2 is a tactile switch capable of controlling the Versal External POR (Power On Reset). +
 
-== Versal POR 制御スイッチ (SW2)
-SW2 は Versal の External POR (Power On Reset) の制御が可能なタクトスイッチです。 +
-工場出荷時にのみ使用することを想定しているため使用しないでください。
+[CAUTION]
+====
+Please do not use this switch, as it is intended for factory use only.
+====
 
-== IGLOO2 POR 制御スイッチ (SW3)
-SW3 は IGLOO2 の POR (Power On Reset) の制御が可能なタクトスイッチです。 +
-工場出荷時にのみ使用することを想定しているため使用しないでください。
+== IGLOO2 POR Control Switch (SW3)
+SW3 is a tactile switch capable of controlling the IGLOO2 POR (Power On Reset). +
 
-== Dev Board 主電源切り替えスイッチ (SW4)
-SW4 は Dev Board の主電源の ON/OFF の切り替えが可能なスライドスイッチです。 +
-『ON』シルク側へトグルを移動させることで主電源が回路へ供給され、『OFF』シルク側へ移動させることで供給を切断することが可能です。
+[CAUTION]
+====
+Please do not use this switch, as it is intended for factory use only.
+====
+
+== Dev Board Main Power Switch (SW4)
+SW4 is a slide switch capable of toggling the Dev Board main power ON/OFF. +
+By moving the toggle toward the "ON" silkscreen side, main power is supplied to the circuit.
+When set to the "OFF" silkscreen side, main power is disconnected.
 
 image::SW4.webp[Detail Image of SW4]
