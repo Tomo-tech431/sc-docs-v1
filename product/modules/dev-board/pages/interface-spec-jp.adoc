@@ -5,27 +5,31 @@ image::interface-layout-jp.webp[Interface Layout Image for Jumper Pins]
 [width="100%",cols="1,3,3",options="header",]
 |===
 |Part Number |Interface Name |Form Factor
-|JP13~JP18 |Versal FPGA JTAG セレクタ |ピンヘッダ 18ピン (6ピン x 3列 / 2.54mm ピッチ)
-|JP19~JP21 |Versal APU/RPU Console (UART0) セレクタ |ピンヘッダ 9ピン (3ピン x 3列 / 2.54mm ピッチ)
-|JP22~JP24 |Versal APU/RPU Console (UART1) セレクタ |ピンヘッダ 9ピン (3ピン x 3列 / 2.54mm ピッチ)
-|JP25~JP29 |IGLOO2 Telemetry/Telecommand セレクタ |ピンヘッダ 15ピン (5ピン x 3列 / 2.54mm ピッチ)
-|JP30~JP33 |RS-422/RS-485 通信設定セレクタ |ピンヘッダ 8ピン (4ピン x 2列 / 2.54mm ピッチ)
-|JP34 |Versal GTYP セレクタ |ピンヘッダ 2ピン (2.54mm ピッチ)
-|JP35~JP37 |Versal I2C セレクタ |ピンヘッダ 6ピン (3ピン x 2列 / 2.54mm ピッチ)
-|JP38~JP41 |Versal Bank 502 電源セレクタ |ピンヘッダ 8ピン (4ピン x 2列 / 2.54mm ピッチ)
-|JP42~JP44 |Versal CAN セレクタ |ピンヘッダ 6ピン (3ピン x 2列 / 2.54mm ピッチ)
-|JP45~JP46 |Versal CAN 終端セレクタ |ピンヘッダ 4ピン (2ピン x 2列 / 2.54mm ピッチ)
-|JP47~JP48 |Versal MIO 通信方向セレクタ |ピンヘッダ 4ピン (2ピン x 2列 / 2.54mm ピッチ)
-|JP49~JP52 |Versal Bank 302 電源セレクタ |ピンヘッダ 8ピン (4ピン x 2列 / 2.54mm ピッチ)
-|JP53~JP56 |IGLOO2 Bank 5 電源セレクタ |ピンヘッダ 8ピン (4ピン x 2列 / 2.54mm ピッチ)
-|JP57~JP58 |FMC モジュール I/O電圧セレクタ |ピンヘッダ 4ピン (2ピン x 2列 / 2.54mm ピッチ)
+|JP13-JP18 |Versal FPGA JTAG Selector |Pin header 18 pins (6 pins x 3 rows / 2.54mm pitch)
+|JP19-JP21 |Versal APU/RPU Console (UART0) Selector |Pin header 9 pins (3 pins x 3 rows / 2.54mm pitch)
+|JP22-JP24 |Versal APU/RPU Console (UART1) Selector |Pin header 9 pins (3 pins x 3 rows / 2.54mm pitch)
+|JP25-JP29 |IGLOO2 Telemetry/Telecommand Selector |Pin header 15 pins (5 pins x 3 rows / 2.54mm pitch)
+|JP30-JP33 |RS-422/RS-485 Communication Setting Selector |Pin header 8 pins (4 pins x 2 rows / 2.54mm pitch)
+|JP34 |Versal GTYP Selector |Pin header 2 pins (2.54mm pitch)
+|JP35-JP37 |Versal I2C Selector |Pin header 6 pins (3 pins x 2 rows / 2.54mm pitch)
+|JP38-JP41 |Versal Bank 502 Power Selector |Pin header 8 pins (4 pins x 2 rows / 2.54mm pitch)
+|JP42-JP44 |Versal CAN Selector |Pin header 6 pins (3 pins x 2 rows / 2.54mm pitch)
+|JP45-JP46 |Versal CAN Termination Selector |Pin header 4 pins (2 pins x 2 rows / 2.54mm pitch)
+|JP47-JP48 |Versal MIO Communication Direction Selector |Pin header 4 pins (2 pins x 2 rows / 2.54mm pitch)
+|JP49-JP52 |Versal Bank 302 Power Selector |Pin header 8 pins (4 pins x 2 rows / 2.54mm pitch)
+|JP53-JP56 |IGLOO2 Bank 5 Power Selector |Pin header 8 pins (4 pins x 2 rows / 2.54mm pitch)
+|JP57-JP58 |FMC Module I/O Voltage Selector |Pin header 4 pins (2 pins x 2 rows / 2.54mm pitch)
 |===
 
-== Versal JTAG セレクタ (JP13~JP18)
-JP13~JP18 は Versal FPGA JTAG インタフェースの接続先を切り替えることが可能なインタフェースです。 +
-ジャンパーソケットを Pin 1-2 間に挿入すると、FTDI IC の Channel. A へ接続され、CON6 (USB Type.C) からアクセスが可能となります。 +
-また Pin 2-3 間に挿入することで、レベルシフタ (IC22, IC23) を介して、CON11 に接続した FMC モジュールと通信が可能となります。 +
-ジャンパーソケットがデフォルトで Pin 1-2 間へ挿入されており、2 x 6 サイズであるため、一度に6ピンの切り替えが可能です。
+== Versal JTAG Selector (JP13-JP18)
+JP13-JP18 are interfaces capable of switching the connection destination of the Versal FPGA JTAG interface. +
+When jumper sockets are inserted between Pin.1-2, it connects to Channel A of the FTDI IC, enabling access from CON6 (USB Type-C). +
+By inserting them between Pin.2-3, it becomes possible to communicate with the FMC module connected to CON11 via level shifters (IC22, IC23).
+
+[NOTE]
+====
+Jumper sockets are inserted between Pin.1-2 by default, and since it is a 2 x 6 size, 6 pins can be switched at a time.
+====
 
 image::JP13.webp[Detail Image of JP13 to JP18]
 
@@ -41,12 +45,16 @@ image::JP13.webp[Detail Image of JP13 to JP18]
 |JP18 |VDD_FTDI_JTAG |VDD_1V8_B503 |VDD_FMC_JTAG |Power
 |===
 
-== Versal APU/RPU Console (UART0) セレクタ (JP19~JP21)
-JP19~JP21 は、FTDI IC の Channel. B への接続先の切り替えが可能なインタフェースです。 +
-ジャンパーソケットを Pin 1-2 間へ挿入すると、Versal LPD MIO にマッピングされた UART0 と接続されます。 +
-また Pin 2-3 間へ挿入することで、Versal HDIO にマッピングされた UART0 (EMIO)へ接続されます。 +
-接続後は CON6 (USB Type.C) からアクセスが可能となります。 +
-ジャンパーソケットがデフォルトで Pin 1-2 間へ挿入されており、2 x 3 サイズであるため、一度に3ピンの切り替えが可能です。
+== Versal APU/RPU Console (UART0) Selector (JP19-JP21)
+JP19-JP21 are interfaces capable of switching the connection destination to Channel B of the FTDI IC. +
+When jumper sockets are inserted between Pin.1-2, it connects to UART0 mapped to the Versal LPD MIO. +
+By inserting them between Pin.2-3, it connects to UART0 (EMIO) mapped to the Versal HDIO. +
+After connection, access is possible from CON6 (USB Type-C).
+
+[NOTE]
+====
+Jumper sockets are inserted between Pin.1-2 by default, and since it is a 2 x 3 size, 3 pins can be switched at a time.
+====
 
 image::JP19.webp[Detail Image of JP19 to JP21]
 
@@ -58,14 +66,22 @@ image::JP19.webp[Detail Image of JP19 to JP21]
 |JP20 |LPD_MIO0_UART0_RXD |FTDI_BDBUS_TXD |HDIO_302_L8P_UART0_RXD
 |JP21 |LPD_MIO1_UART0_TXD |FTDI_BDBUS_RXD |HDIO_302_L8N_UART0_TXD
 |===
-NOTE: VDD : Power / RXD : Input / TXD : Output
 
-== Versal APU/RPU Console (UART1) セレクタ (JP22~JP24)
-JP22~JP24 は、FTDI IC の Channel. C への接続先の切り替えが可能なインタフェースです。 +
-ジャンパーソケットを Pin 1-2 間へ挿入すると、Versal LPD MIO にマッピングされた UART1 と接続されます。 +
-また Pin 2-3 間へ挿入することで、Versal HDIO にマッピングされた UART1 (EMIO)へ接続されます。 +
-接続後はどちらも CON6 (USB Type.C) からアクセスが可能となります。 +
-ジャンパーソケットがデフォルトで Pin 1-2 間へ挿入されており、2 x 3 サイズであるため、一度に3ピンの切り替えが可能です。
+[NOTE]
+====
+VDD: Power / RXD: Input / TXD: Output
+====
+
+== Versal APU/RPU Console (UART1) Selector (JP22-JP24)
+JP22-JP24 are interfaces capable of switching the connection destination to Channel C of the FTDI IC. +
+When jumper sockets are inserted between Pin.1-2, it connects to UART1 mapped to the Versal LPD MIO. +
+By inserting them between Pin.2-3, it connects to UART1 (EMIO) mapped to the Versal HDIO. +
+After connection, access is possible from CON6 (USB Type-C) for both.
+
+[NOTE]
+====
+Jumper sockets are inserted between Pin.1-2 by default, and since it is a 2 x 3 size, 3 pins can be switched at a time.
+====
 
 image::JP22.webp[Detail Image of JP22 to JP24]
 
@@ -77,14 +93,22 @@ image::JP22.webp[Detail Image of JP22 to JP24]
 |JP20 |LPD_MIO5_UART1_RXD |FTDI_CDBUS_TXD |HDIO_302_L10P_UART1_RXD
 |JP21 |LPD_MIO4_UART1_TXD |FTDI_CDBUS_RXD |HDIO_302_L10N_UART1_TXD
 |===
-NOTE: VDD : Power / RXD : Input / TXD: Output
 
-== IGLOO2 Telemetry/Telecommand セレクタ (JP25~JP29)
-JP25~JP29 は、IGLOO2 の UART の接続先の切り替えが可能なインタフェースです。 +
-IGLOO2 の UART にアクセスすることで、OBC からの Telemetry 信号によるモニタや、OBC への Telecommand 信号によるモード変更が可能となります。 +
-ジャンパーソケットを Pin 1-2 間へ挿入すると、FTDI IC の Channel. D と接続され、CON6 (USB Type.C) からアクセスが可能となります。 +
-また Pin 2-3 間へ挿入することで、CON18 から RS-422/RS-485 の規格に対応したデバイスでアクセスが可能となります。 +
-ジャンパーソケットがデフォルトで Pin 1-2 間へ挿入されており、2 x 5 サイズであるため、一度に5ピンの切り替えが可能です。
+[NOTE]
+====
+VDD: Power / RXD: Input / TXD: Output
+====
+
+== IGLOO2 Telemetry/Telecommand Selector (JP25-JP29)
+JP25-JP29 are interfaces capable of switching the connection destination of the IGLOO2 UART. +
+By accessing the IGLOO2 UART, it is possible to monitor via Telemetry signals from the OBC or change modes via Telecommand signals to the OBC. +
+When jumper sockets are inserted between Pin.1-2, it connects to Channel D of the FTDI IC, enabling access from CON6 (USB Type-C). +
+By inserting them between Pin.2-3, access becomes possible from CON18 using devices compatible with the RS-422/RS-485 standard.
+
+[NOTE]
+====
+Jumper sockets are inserted between Pin.1-2 by default, and since it is a 2 x 5 size, 5 pins can be switched at a time.
+====
 
 image::JP25.webp[Detail Image of JP25 to JP29]
 
@@ -98,134 +122,195 @@ image::JP25.webp[Detail Image of JP25 to JP29]
 |JP28 |NC |M2GL_UART_DE |RS422_DE
 |JP29 |NC |M2GL_UART_RE_B |RS422_RE_B
 |===
-NOTE: VDD : Power / RXD, RX, D : Input / TXD, TX, R : Output
 
-== RS-422/RS-485 通信設定セレクタ (JP30~JP33)
-JP30~JP33 は、CON18 に RS-422/RS-485 の規格に対応したデバイスを接続して OBC と通信する際に設定するインタフェースです。 +
-ジャンパーソケットは下表を参考に、対応するデバイスに合わせた設定にしてください。 +
-デフォルトは JP31 にジャンパーソケットが挿入されています。
+[NOTE]
+====
+VDD: Power / RXD,RX,D: Input / TXD,TX,R: Output
+====
+
+== RS-422/RS-485 Communication Setting Selector (JP30-JP33)
+JP30-JP33 are interfaces to configure when connecting RS-422/RS-485 compatible devices to CON18 to communicate with the OBC. +
+Please set the jumper sockets according to the corresponding device by referring to the table below.
+
+[NOTE]
+====
+By default, a jumper socket is inserted in JP31.
+====
 
 image::JP30.webp[Detail Image of JP30 to JP33]
 
 [width="100%",cols="1,7",options="header",]
 |===
 |REF |Description
-|JP30 |Driver の終端抵抗の有無を選択できるインタフェースです。 +
-Driver を終端する場合はジャンパーソケットを挿入してください。
-|JP31 |Receiver の終端抵抗の有無を選択できるインタフェースです。 +
-Receiver を終端する場合はジャンパーソケットを挿入してください。
-|JP32 |Transceiver の Y 端子と A 端子を短絡可能なインタフェースです。 +
-半二重で通信する場合、ジャンパーソケットを挿入してください。
-|JP33 |Transceiver の Z 端子と B 端子を短絡可能なインタフェースです。 +
-半二重で通信する場合、ジャンパーソケットを挿入してください。
+|JP30 |Interface to select the presence of a Driver termination resistor. +
+Please insert a jumper socket if terminating the Driver.
+|JP31 |Interface to select the presence of a Receiver termination resistor. +
+Please insert a jumper socket if terminating the Receiver.
+|JP32 |Interface capable of short-circuiting the Y and A terminals of the Transceiver. +
+Please insert a jumper socket when communicating in half-duplex.
+|JP33 |Interface capable of short-circuiting the Z and B terminals of the Transceiver. +
+Please insert a jumper socket when communicating in half-duplex.
 |===
-NOTE: 半二重での通信で終端する場合は、JP30 または JP31 のどちらかへジャンパーソケットを挿入してください。
 
-== Versal GTYP セレクタ (JP34)
-JP34 は Versal の高速シリアル通信信号である GTYP の接続先の切り替えが可能なインタフェースです。 +
-CON6 (USB Type.C) を利用して SmartLynq+ モジュールによる Versal の高速デバックおよびトレースを行いたい場合は、ジャンパーソケットを挿入してください。 +
-上記を行わず、CON11 に接続した FMC モジュールで対象の GTYP を評価を行いたい場合は、ジャンパーソケットを挿入しないでください。
+[NOTE]
+====
+When terminating in half-duplex communication, please insert a jumper socket into either JP30 or JP31.
+====
+
+== Versal GTYP Selector (JP34)
+JP34 is an interface capable of switching the connection destination of GTYP, which is Versal's high-speed serial communication signal. +
+Please insert a jumper socket if you wish to perform high-speed debugging and tracing of Versal using a SmartLynq+ module utilizing CON6 (USB Type-C). +
+If you do not perform the above and wish to evaluate the target GTYP with the FMC module connected to CON11, do not insert a jumper socket.
 
 image::JP34.webp[Detail Image of JP34]
 
-== Versal I2C セレクタ (JP35~JP37)
-JP35~JP37 は、I2C0 にマッピングされた Versal LPD MIO を、FMC モジュールで使用したい場合に使用するインタフェースです。 +
-FMC モジュールで使用したい場合、ジャンパーソケットを挿入してください。 +
-Versal LPD MIO がレベルシフタ (IC24) を介して、CON11 に接続した FMC モジュールへ接続されます。 +
-ただし、対象の Versal LPD MIO は CON12 にも分岐しているため注意が必要です。 +
-JP35~JP37 へはデフォルトで 2 x 3 サイズのジャンパーソケットが挿入されています。
+== Versal I2C Selector (JP35-JP37)
+JP35-JP37 are interfaces used when you want to utilize the Versal LPD MIO mapped to I2C0 with the FMC module. +
+Please insert jumper sockets if you want to use it with the FMC module. +
+The Versal LPD MIO will be connected to the FMC module connected to CON11 via a level shifter (IC24).
+
+[NOTE]
+====
+By default, 2 x 3 size jumper sockets are inserted into JP35-JP37.
+====
+
+[CAUTION]
+====
+The target Versal LPD MIO is also routed to CON12.
+====
 
 image::JP35.webp[Detail Image of JP35 to JP37]
 
-== Versal Bank 502 電源セレクタ (JP38~JP41)
-JP38~JP41 は、Versal LPD MIO の電源ドメインを切り替えることが可能なインタフェースです。 +
-デフォルトは JP40 の電源が選択されています。 +
-電源の割り当ては下表を参照してください。 +
-ここで選択した電圧が CON12 にも供給されます。 +
-なお、CON10 (Ethernet) または CON19 (CAN) を使用する場合、1.8V 以上の電圧を選択してください。
+== Versal Bank 502 Power Selector (JP38-JP41)
+JP38-JP41 are interfaces capable of switching the power domain of the Versal LPD MIO. +
+Please refer to the table below for power assignments. +
+The voltage selected here is also supplied to CON12.
+
+[NOTE]
+====
+By default, the power for JP40 is selected.
+====
+
+[CAUTION]
+====
+When using CON10 (Ethernet) or CON19 (CAN), please select a voltage of 1.8V or higher.
+====
 
 image::JP38.webp[Detail Image of JP38 to JP41]
 
 [width="100%",cols="1,1,3",options="header",]
 |===
 |REF |Pin Name |Description
-|JP38 |VDD_3V3_C |Dev Board の主電源から生成される +3.3V 電源
-|JP39 |VDD_3V3_M |OBC で生成された +3.3V 電源
-|JP40 |VDD_1V8_M |OBC で生成された +1.8V 電源。約 0.5A の電流制限あり。
-|JP41 |VDD_1V2_M |OBC で生成された +1.2V 電源。約 0.5A の電流制限あり。
+|JP38 |VDD_3V3_C |+3.3V power generated from the Dev Board main power
+|JP39 |VDD_3V3_M |+3.3V power generated by the OBC
+|JP40 |VDD_1V8_M |+1.8V power generated by the OBC. Has a current limit of approx. 0.5A.
+|JP41 |VDD_1V2_M |+1.2V power generated by the OBC. Has a current limit of approx. 0.5A.
 |===
 
-== Versal CAN セレクタ (JP42~JP44)
-JP42~JP44 は、CON19 を利用して Versal と CAN 通信がしたい場合に使用するインタフェースです。 +
-CON19 に CAN 対応デバイスを接続して Versal と通信したい場合は、ジャンパーソケットを挿入してください。 +
-ただし、ここで使用している Versal LPD MIO は CON12 にも分岐しているため注意が必要です。 +
-JP42~JP44 へはデフォルトで 2 x 3 サイズのジャンパーソケットが挿入されています。
+== Versal CAN Selector (JP42-JP44)
+JP42-JP44 are interfaces used when you wish to perform CAN communication with Versal utilizing CON19. +
+Please insert jumper sockets if you want to connect a CAN compatible device to CON19 to communicate with Versal.
+
+[NOTE]
+====
+By default, 2 x 3 size jumper sockets are inserted into JP42-JP44.
+====
+
+[CAUTION]
+====
+The target Versal LPD MIO is also routed to CON12.
+====
 
 image::JP42.webp[Detail Image of JP42 to JP44]
 
-== Versal CAN 終端セレクタ (JP45~JP46)
-JP45~JP46 は CAN の終端抵抗の有無を選択できるインタフェースです。 +
-CAN の終端抵抗が必要な場合は、ジャンパーソケットを挿入してください。 +
-デフォルトは 1 x 2 サイズのジャンパーソケット 2個が挿入されています。
+== Versal CAN Termination Selector (JP45-JP46)
+JP45-JP46 are interfaces to select the presence of a CAN termination resistor. +
+Please insert jumper sockets if a CAN termination resistor is required.
+
+[NOTE]
+====
+By default, two 1 x 2 size jumper sockets are inserted.
+====
 
 image::JP45.webp[Detail Image of JP45 to JP46]
 
-== Versal MIO 通信方向セレクタ (JP47~JP48)
-JP47~JP48 は、CON12 に接続されている Versal PMC MIO 0 および Versal PMC MIO 1 の通信方向に合わせて設定するインタフェースです。 +
-対象の MIO は CON12 までの間にレベルシフタ (IC27) を介しているため、MIO の通信方向に従ってレベルシフタの通信方向を設定する必要があります。 +
-下表に、ジャンパーソケットを挿入または抜去した場合の、CON12 から見た入出力の方向を示します。 +
-デフォルトはジャンパーソケットが挿入されていません。 +
+== Versal MIO Communication Direction Selector (JP47-JP48)
+JP47-JP48 are interfaces configured according to the communication direction of Versal PMC MIO 0 and Versal PMC MIO 1 connected to CON12. +
+Because the target MIO passes through a level shifter (IC27) on its way to CON12, it is necessary to set the communication direction of the level shifter according to the MIO's communication direction. +
+The table below shows the input/output directions as seen from CON12 when a jumper socket is inserted or removed.
+
+[NOTE]
+====
+By default, no jumper sockets are inserted.
+====
 
 image::JP47.webp[Detail Image of JP47 to JP48]
 
 [width="100%",cols="1,2,2,2",options="header",]
 |===
 |REF |Target MIO |Jumper Socket |CON12 Pin Direction
-.2+|JP47 .2+|PMC_MIO12_3V3 |挿入 |Output
-|抜去 |Input
-.2+|JP48 .2+|PMC_MIO37_3V3 |挿入 |Output
-|抜去 |Input
+.2+|JP47 .2+|PMC_MIO12_3V3 |Inserted |Output
+|Removed |Input
+.2+|JP48 .2+|PMC_MIO37_3V3 |Inserted |Output
+|Removed |Input
 |===
 
-== Versal Bank 302 電源セレクタ (JP49~JP52)
-JP49~JP52 は、Versal HDIO の電源ドメインを切り替えることが可能なインタフェースです。 +
-デフォルトは JP49 の電源が選択されています。 +
-電源の割り当ては下表を参照してください。 +
-ここで選択した電圧が CON14 にも供給されます。
+== Versal Bank 302 Power Selector (JP49-JP52)
+JP49-JP52 are interfaces capable of switching the power domain of the Versal HDIO. +
+Please refer to the table below for power assignments. +
+The voltage selected here is also supplied to CON14.
+
+[NOTE]
+====
+By default, the power for JP49 is selected.
+====
 
 image::JP49.webp[Detail Image of JP49 to JP52]
 
 [width="100%",cols="1,1,4",options="header",]
 |===
 |REF |Pin Name |Description
-|JP49 |VDD_3V3_C |Dev Board の主電源から生成される +3.3V 電源
-|JP50 |VDD_3V3_M |OBC で生成された +3.3V 電源
-|JP51 |VDD_1V8_M |OBC で生成された +1.8V 電源。約 0.5A の電流制限あり。
-|JP52 |VDD_1V2_M |OBC で生成された +1.2V 電源。約 0.5A の電流制限あり。
+|JP49 |VDD_3V3_C |+3.3V power generated from the Dev Board main power
+|JP50 |VDD_3V3_M |+3.3V power generated by the OBC
+|JP51 |VDD_1V8_M |+1.8V power generated by the OBC. Has a current limit of approx. 0.5A.
+|JP52 |VDD_1V2_M |+1.2V power generated by the OBC. Has a current limit of approx. 0.5A.
 |===
 
-== IGLOO2 Bank 5 電源セレクタ (JP53~JP56)
-JP53~JP56 は、IGLOO2 MSIO (Bank 5) の電源ドメインを切り替えることが可能なインタフェースです。 +
-デフォルトは JP53 の電源が選択されています。 +
-電源の割り当ては下表を参照してください。 +
-ここで選択した電圧が CON15 にも供給されます。
+== IGLOO2 Bank 5 Power Selector (JP53-JP56)
+JP53-JP56 are interfaces capable of switching the power domain of the IGLOO2 MSIO (Bank 5). +
+Please refer to the table below for power assignments. +
+The voltage selected here is also supplied to CON15.
+
+[NOTE]
+====
+By default, the power for JP53 is selected.
+====
 
 image::JP53.webp[Detail Image of JP53 to JP56]
 
 [width="100%",cols="1,1,4",options="header",]
 |===
 |REF |Pin Name |Description
-|JP53 |VDD_3V3_C |Dev Board の主電源から生成される +3.3V 電源
-|JP54 |VDD_3V3_M |OBC で生成された +3.3V 電源
-|JP55 |VDD_1V8_M |OBC で生成された +1.8V 電源。約 0.5A の電流制限あり。
-|JP56 |VDD_1V2_M |OBC で生成された +1.2V 電源。約 0.5A の電流制限あり。
+|JP53 |VDD_3V3_C |+3.3V power generated from the Dev Board main power
+|JP54 |VDD_3V3_M |+3.3V power generated by the OBC
+|JP55 |VDD_1V8_M |+1.8V power generated by the OBC. Has a current limit of approx. 0.5A.
+|JP56 |VDD_1V2_M |+1.2V power generated by the OBC. Has a current limit of approx. 0.5A.
 |===
 
-== FMC モジュール I/O電圧セレクタ (JP57~JP58)
-JP57~JP58 は、FMC モジュールに接続される Versal XPIO および IGLOO2 MSIO (Bank 8) の電源ドメインを選択できるインタフェースです。 +
-CON11 の VADJ 端子へも同様に供給されるため、ここで選択した電源ドメインで通信が可能となります。 +
-他の電源セレクタと異なり、Switching Regulator の Feedback 抵抗を変化させることで電圧を変化させているため、JP57 と JP58 の両方にジャンパーソケットを挿入した場合、意図しない電圧となることに注意が必要です。 +
-デフォルトは JP58 へジャンパーソケットが挿入されています。
+== FMC Module I/O Voltage Selector (JP57-JP58)
+JP57-JP58 are interfaces that allow selecting the power domain of the Versal XPIO and IGLOO2 MSIO (Bank 8) connected to the FMC module. +
+Since it is similarly supplied to the VADJ terminal of CON11, communication becomes possible at the selected power domain here.
+
+[NOTE]
+====
+By default, a jumper socket is inserted into JP58.
+====
+
+[CAUTION]
+====
+Inserting jumper sockets into both JP57 and JP58 will result in an unintended voltage. +
+Unlike other power selectors, because the voltage is changed by altering the Feedback resistor of the Switching Regulator.
+====
 
 image::JP57.webp[Detail Image of JP57 to JP58]
 
